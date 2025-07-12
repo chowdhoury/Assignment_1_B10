@@ -1,19 +1,11 @@
-:root{
-    --primary-color: #0D1321;
-}
-
-
-/* Universal Style  */
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-
-
 /* Font Style  */
-
-.azeret-mono-normal{
+.azeret-mono-normal {
   font-family: "Azeret Mono", monospace;
   font-optical-sizing: auto;
   font-style: normal;
@@ -21,97 +13,75 @@
 
 
 
+
 /* Shared Style  */
+.section-width{
+    max-width: 1140px;
+    margin: auto;
+}
+:root{
+    --primary-color: #0D1321;
+}
 .primary-btn{
     font-size: 20px;
     font-weight: 600;
-    color: var(--primary-color);
+    color: rgba(13, 19, 33, 0.8);
     padding: 17px 24px;
+    border: 1px solid rgba(13, 19, 33, 0.8);
     border-radius: 8px;
-    border: 1px solid var(--primary-color);
-    opacity: 80%;
 }
 .description{
     font-size: 16px;
-    color: var(--primary-color);
-    opacity: 80%;
-}
-section{
-    margin: 0 auto;
-    height: 1393px;
-    max-width: 1140px;
-    margin-top: 90px;
+    font-weight: 400;
+    color: rgba(13, 19, 33, 0.8);
 }
 
 
-/* Header Section  */
+
+/* Navigation Section  */
 nav{
-    max-width: 1140px;
-    margin: 0 auto;
+    height: 131px;
     display: flex;
-    height: 102px;
     align-items: center;
     justify-content: space-between;
 }
 nav h3{
-    font-weight: 900;
     font-size: 28px;
+    font-weight: 900;
     color: var(--primary-color);
 }
 
 
-.banner{  
+
+
+
+/* Banner Section  */
+.banner{
     max-width: 1440px;
-    background-image: url("../assets/Hero-bg.png");
-    margin: 0 auto;
     display: flex;
     height: 652px;
     align-items: center;
     justify-content: center;
+    margin: auto;
     flex-direction: column;
-    gap: 36px;
+    gap: 32px;
     text-align: center;
+    background-image: url('../assets/Hero-bg.png');
 }
-.akta-margin{
-    margin-top: 24px;
+.banner img{
+    height: 240px;
+    max-width: 240px;
 }
-.banner h1{
+.banner-title{
     font-size: 48px;
     font-weight: 900;
     color: var(--primary-color);
+    max-width: 998px;
+}
+.banner p{
+    max-width: 852px;
 }
 .banner button{
-    color: #ffffff !important;
-    border: 1px solid var(--primary-color);
     background-color: var(--primary-color);
-    opacity: 110%;
-}
-
-
-/* Why Web Section Style  */
-.why-web{
-    background-color: rgba(13, 19, 33, 0.02);
-}
-.why-web > div{
-    margin: 80px 97px;
-}
-.item{
-    /* display: flex;
-    align-items: center; */
-    border: 1px solid red;
-    /* padding: 48px; */
-}
-.item> div{
-    display: flex;
-    margin: 48px;
-    align-items: center;
-}
-.why-web h2,.why-web p{
-    text-align: center;
-}
-.why-web h2{
-    margin-bottom: 24px;
-}
-.item-container{
-    margin-top: 48px;
+    color: white;
 }
